@@ -1,0 +1,27 @@
+<script>
+    var url = "./js/modifierHotel.js";
+    $.getScript(url);
+    var url = "./js/hotels.js";
+    $.getScript(url);
+</script>
+
+<div class='modifHotel'>
+    <h2 id="h2modif"></h2>
+    <form action="?controleur=hotels&todo=modifier" class="formModif" method="POST">
+        <label for="">Nom</label><br>
+        <input type="text" id="nomModif" name="nomModif"><br>
+        <label for="">Adresse</label><br>
+        <input type="text" id="adresseModif" name="adresseModif"><br>
+        <label for="">Nombre étoile</label><br>
+        <input type="text" id="etoileModif" name="etoileModif"><br>
+        <label for="">Prix participant</label><br>
+        <input type="text" id="prixParticipantModif" name="prixParticipantModif"><br>
+        <label for="">Prix supplémentaire</label><br>
+        <input type="text" id="prixSuppModif" name="prixSuppModif">
+        <input id="idModif" type="hidden" value="" name="idModif">
+        <div class="confirmButton">
+            <button type="button" id="cancelModif">Annuler</button>
+            <input type="submit" value="Confirmer">
+        </div>
+    </form>
+</div>
